@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+$text: #000000;
+$hover: #5F5F5F;
+$primary: #FFFFFF;
+$secondary: #f3deaf;
+
+$red: #992700;          //error
+$orange: #d34a24;       
+$yellow: #ffaf00;       
+$green: #74a98b;        
+$blue: #3c7e73;         // links
+$font: Arial, Helvetica, sans-serif;
+
+body {
+    background-color: $secondary;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.root {
+    display: flex;
+    background-color: $primary;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: $red;
+    min-height: 100vh;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 750px) { .page { width: 100%; } }
+
+@media only screen and (min-width: 750px) { .page { width: 750px; } }
